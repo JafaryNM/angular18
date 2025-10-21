@@ -10,7 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   data = {
-    title: 'Angular Frontend Development',
+    title: 'angular',
   };
-  title = 'my-angular-app';
+  handleClick(){
+    alert('You are click button')
+  }
+  onKeyUp(newTitle:string){
+    this.data.title =newTitle;
+  }
 }
